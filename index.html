@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Najeeb R | Resume Portfolio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#f4f7fb;color:#1f2937;line-height:1.65}
+.container{width:min(1100px,94%);margin:25px auto;background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 12px 35px rgba(0,0,0,.10)}
+header{background:linear-gradient(135deg,#111827,#2563eb);color:#fff;padding:55px 30px;text-align:center}
+header h1{font-size:44px;margin-bottom:8px} header p{font-size:18px;opacity:.95}
+nav{background:#0f172a;padding:14px;text-align:center;position:sticky;top:0;z-index:10}
+nav a{color:#fff;text-decoration:none;margin:0 12px;font-size:14px} nav a:hover{color:#38bdf8}
+section{padding:38px 42px} h2{color:#2563eb;margin-bottom:20px;border-bottom:2px solid #e5e7eb;padding-bottom:9px}
+.about{text-align:center;max-width:820px;margin:auto}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:#f8fafc;padding:20px;border-radius:13px;border-left:4px solid #2563eb}.card h3{margin-bottom:6px;color:#111827}
+.skills{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.skill{background:#e8f0ff;color:#174ea6;padding:9px 15px;border-radius:22px;font-weight:bold;font-size:14px}
+.project{background:#f8fafc;padding:22px;border-radius:14px;border-left:4px solid #2563eb}.project h3{color:#2563eb;margin-bottom:8px}
+.certificates{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}.certificate{background:#fff;border:1px solid #e5e7eb;border-radius:15px;padding:12px;box-shadow:0 5px 18px rgba(0,0,0,.07);transition:.2s}.certificate:hover{transform:translateY(-4px);box-shadow:0 10px 25px rgba(0,0,0,.12)}
+.certificate img{width:100%;height:210px;object-fit:contain;background:#f8fafc;border-radius:9px;cursor:pointer}.certificate h3{margin:12px 5px 4px;font-size:17px}.certificate p{margin:0 5px;color:#64748b;font-size:14px}.view{display:inline-block;margin:10px 5px 3px;padding:8px 13px;background:#2563eb;color:#fff;text-decoration:none;border-radius:7px;font-size:13px}
+.contact{text-align:center;background:#f8fafc}.contact p{margin:8px}.note{font-size:13px;color:#64748b;margin-top:12px}
+footer{text-align:center;padding:20px;background:#111827;color:#fff;font-size:14px}
+#viewer{display:none;position:fixed;inset:0;background:rgba(0,0,0,.86);z-index:100;align-items:center;justify-content:center;padding:25px}#viewer img{max-width:95%;max-height:90%;object-fit:contain}.close{position:absolute;right:25px;top:15px;color:#fff;font-size:38px;cursor:pointer}
+@media(max-width:650px){header h1{font-size:31px}header p{font-size:15px}section{padding:28px 20px}nav{line-height:2.2}nav a{margin:0 6px;font-size:12px}.certificate img{height:180px}}
+</style>
+</head>
+<body>
+<div class="container">
+<header><h1>Mohamed Najeeb R</h1><p>B.Com Graduate | MBA Student | Typist | Aspiring IT Professional</p></header>
+<nav><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a></nav>
+<section id="about"><h2>About Me</h2><div class="about"><p>A motivated commerce graduate currently pursuing an MBA, with an interest in Accounts, Finance, Administration, Technology and basic Web Development. I enjoy learning new skills and building a strong professional career.</p></div></section>
+<section id="education"><h2>Education</h2><div class="grid">
+<div class="card"><h3>MBA</h3><p>PET Engineering College</p><p>Currently Pursuing</p></div>
+<div class="card"><h3>Bachelor of Commerce (B.Com)</h3><p>Sadakathullah Appa College (Autonomous), Tirunelveli</p><p>2023 – 2026</p></div>
+<div class="card"><h3>HSC</h3><p>Senaithalaivar Higher Secondary School, Tirunelveli</p><p>Passed out in 2023</p></div>
+<div class="card"><h3>SSLC</h3><p>Chennai High School, Errukkanchery, Chennai</p><p>Passed out in 2021</p></div>
+</div></section>
+<section id="skills"><h2>Skills</h2><div class="skills">
+<span class="skill">Typewriting</span><span class="skill">HTML</span><span class="skill">PHP</span><span class="skill">XAMPP</span><span class="skill">MS Office</span><span class="skill">MS Word</span><span class="skill">MS Excel</span><span class="skill">Leadership</span><span class="skill">Decision Making</span><span class="skill">Problem Solving</span><span class="skill">Communication</span>
+</div></section>
+<section id="projects"><h2>Projects & Field Work</h2><div class="grid">
+<div class="project"><h3>B.Com Academic Project</h3><p><strong>A Study on Consumers Behaviour and Preference of Britannia Products in Tirunelveli City</strong></p><p><strong>Year:</strong> 2026</p><p><strong>Methodology:</strong> Convenience Sampling</p><p><strong>Data:</strong> Primary & Secondary Data</p><p><strong>Analysis:</strong> Percentage Method</p><a class="view" href="assets/project-certificate.png" target="_blank">View Project Certificate</a></div>
+<div class="project"><h3>Field Work – Baskar Global Enterprises</h3><p>Field work at Baskar Global Enterprises (Electronics), Tirunelveli.</p><p><strong>Year:</strong> 2025</p><a class="view" href="assets/field-work-certificate.png" target="_blank">View Field Work Certificate</a></div>
+</div></section>
+<section id="certificates"><h2>Certificates</h2><div class="certificates">
+<div class="certificate"><img src="assets/field-work-certificate.png" alt="Field Work Certificate" onclick="showImage(this.src)"><h3>Field Work Certificate</h3><p>Baskar Global Enterprises</p><a class="view" href="assets/field-work-certificate.png" target="_blank">Open Certificate</a></div>
+<div class="certificate"><img src="assets/project-certificate.png" alt="B.Com Project Certificate" onclick="showImage(this.src)"><h3>B.Com Project Certificate</h3><p>Britannia Products – Tirunelveli City</p><a class="view" href="assets/project-certificate.png" target="_blank">Open Certificate</a></div>
+<div class="certificate"><img src="assets/nptel-cost-accounting.png" alt="NPTEL Cost Accounting Certificate" onclick="showImage(this.src)"><h3>NPTEL – Cost Accounting</h3><p>Fundamentals of Cost Accounting – 55%</p><a class="view" href="assets/nptel-cost-accounting.png" target="_blank">Open Certificate</a></div>
+<div class="certificate"><img src="assets/tamil-journalism.png" alt="Tamil Journalism Certificate" onclick="showImage(this.src)"><h3>Tamil Journalism</h3><p>Add-On Programme – Grade A, First Class</p><a class="view" href="assets/tamil-journalism.png" target="_blank">Open Certificate</a></div>
+<div class="certificate"><img src="assets/unnati-unxt.png" alt="Unnati UNXT Certificate" onclick="showImage(this.src)"><h3>UNXT – Unnati</h3><p>30-Day Soft Skill Development Programme</p><a class="view" href="assets/unnati-unxt.png" target="_blank">Open Certificate</a></div>
+<div class="certificate"><img src="assets/cybersecurity.png" alt="Cybersecurity Awareness Certificate" onclick="showImage(this.src)"><h3>Cybersecurity Awareness</h3><p>SISA – CYBERSMART BHARAT</p><a class="view" href="assets/cybersecurity.png" target="_blank">Open Certificate</a></div>
+<div class="certificate"><img src="assets/career-guidance.png" alt="Career Guidance Webinar Certificate" onclick="showImage(this.src)"><h3>Career Guidance Webinar</h3><p>Skilldunia with E-Cell IIT Hyderabad</p><a class="view" href="assets/career-guidance.png" target="_blank">Open Certificate</a></div>
+<div class="certificate"><img src="assets/sidp-completion.png" alt="SIDP Completion Certificate" onclick="showImage(this.src)"><h3>SIDP – Completion</h3><p>School Innovation Development Project</p><a class="view" href="assets/sidp-completion.png" target="_blank">Open Certificate</a></div>
+<div class="certificate"><img src="assets/sidp-appreciation.png" alt="SIDP Appreciation Certificate" onclick="showImage(this.src)"><h3>SIDP – Appreciation</h3><p>Idea Submission Challenge</p><a class="view" href="assets/sidp-appreciation.png" target="_blank">Open Certificate</a></div>
+</div></section>
+<section id="contact" class="contact"><h2>Contact</h2><p>📞 +91 9003131078</p><p>✉️ najeebnaufal4@gmail.com</p><p>🔗 http://www.linkedin.com/in/mohamed-najeeb-r-8b0204361</p><p>📍 Tirunelveli, Tamil Nadu, India</p><p class="note">Replace the contact placeholders with your details.</p></section>
+<footer>© 2026 Mohamed Najeeb R | Personal Resume Website</footer>
+</div>
+<div id="viewer" onclick="hideImage()"><span class="close">&times;</span><img id="viewerImg" src="" alt="Certificate Preview"></div>
+<script>function showImage(src){document.getElementById('viewerImg').src=src;document.getElementById('viewer').style.display='flex'}function hideImage(){document.getElementById('viewer').style.display='none'}</script>
+</body></html>
